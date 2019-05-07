@@ -44,6 +44,7 @@
     <postgres.version>9.3-1102-jdbc41</postgres.version>
     <oracle.version>11.2.0.4</oracle.version>
     <junit.version>4.11</junit.version>
+    <skipTests>true</skipTests>
   </properties>
 
   <modules>
