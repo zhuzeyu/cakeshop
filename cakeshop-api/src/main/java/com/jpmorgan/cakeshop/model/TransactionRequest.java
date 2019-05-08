@@ -15,7 +15,7 @@ public class TransactionRequest {
 
     public static final String BLOCK_LATEST = "latest";
 
-    public static final int DEFAULT_GAS = 3_149_000;
+    public static final String DEFAULT_GAS = "0x300CC8";
 
     private String fromAddress;
 
@@ -62,7 +62,7 @@ public class TransactionRequest {
         req.put("from", fromAddress);
         req.put("to", contractAddress);
         req.put("gas", DEFAULT_GAS);
-        req.put("data", function.encodeAsHex(args));
+        req.put("data", "0x" + function.encodeAsHex(args));
 
         if (StringUtils.isNotBlank(privateFrom)) {
             req.put("privateFrom", privateFrom);
