@@ -41,9 +41,12 @@ public class Block implements Serializable {
     private String miner;
     private BigInteger difficulty;
     private BigInteger totalDifficulty;
-    private String extraData;
     private BigInteger gasLimit;
     private BigInteger gasUsed;
+
+    @Lob
+    @Column(length = 40960)
+    private String extraData;
 
     @Column(name = "timestamp_val", precision = 50)
     private BigInteger timestamp;
