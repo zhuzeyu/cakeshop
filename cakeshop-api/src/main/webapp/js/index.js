@@ -107,8 +107,8 @@ window.Tower = {
 
 		if (window.localStorage.getItem('tourEnded') === null) {
 			//first time, activate tour automatically
-			$(document).trigger('StartTour');
-			Tower.tour.start(true);
+			//$(document).trigger('StartTour');
+			//Tower.tour.start(true);
 		}
 
 		return true;
